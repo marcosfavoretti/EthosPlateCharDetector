@@ -32,5 +32,5 @@ class ResolvePlates:
         for plate in self.plates:
             plate.saveRecort(image_raw)
             plate.ocrLabels()
-
+        self.plates.clear()
         

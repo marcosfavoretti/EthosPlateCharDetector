@@ -1,5 +1,7 @@
 import cv2
 from ocr import Ocr
+from yoloOcr import YoloOcr
+
 class Plate:
     def __init__(self):#passar tudo por parametro do contrutor !melhora
         self.plate = None
@@ -7,6 +9,7 @@ class Plate:
         self.subtext = None
         self.filePath = None
         self.ocr = Ocr()
+        #self.ocr = YoloOcr()
         self.fatherImage = None
     
     def saveRecort(self,img_raw):

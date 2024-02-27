@@ -9,7 +9,7 @@ class Ocr:
     def ocr(self, mat):
         image = np.array(mat, dtype=np.uint8)  # Exemplo de matriz 3x3 como imagem (BGR)
 
-        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
         #pre processamento de img
         
         # Aplica binarização (opcional, dependendo da qualidade da imagem)
